@@ -30,7 +30,6 @@ This project classifies text as **positive** or **negative** sentiment, built as
 sentiment-analyzer/
 ├── app/
 │   ├── app.py                      # Gradio UI - entry point for the app
-│   └── requirements.txt            # dependencies 
 ├── data/
 │   ├── raw/
 │   │   └── IMDB_Dataset.csv        # original dataset 
@@ -47,6 +46,8 @@ sentiment-analyzer/
 │   ├── preprocess.py               # cleaning, dedup, train/test split
 │   ├── train_classic.py            # TF-IDF + LogReg / LinearSVC training
 │   └── inference.py                # unified inference wrapper (classic or transformer backend)
+├── requirements.txt                # dependencies
+├── Architecture                    # Architecture of NLP in mermaid
 ├── LICENSE
 └── README.md
 ```
