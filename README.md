@@ -23,11 +23,6 @@ This project classifies text as **positive** or **negative** sentiment, built as
 <img width="350" height="400" alt="Screenshot 2026-08-15 235707" src="https://github.com/user-attachments/assets/9feef68e-8f2f-48cb-88ea-1a44487726aa" />
 <img width="587" height="325" alt="Screenshot 2026-08-15 235720" src="https://github.com/user-attachments/assets/f3175227-c6f0-40f8-9137-608829004c5d" />
 
-## App Visual
-<img width="500" height="350" alt="Screenshot 2026-08-15 232554" src="https://github.com/user-attachments/assets/dab04277-5152-40cb-acc5-99bb19c1a5b6" />
-<img width="500" height="350" alt="Screenshot 2026-08-15 231747" src="https://github.com/user-attachments/assets/6d7d7ad2-c737-4e8e-b93e-827520ffc440" />
-
-
 
 ## Project Structure
 
@@ -81,7 +76,7 @@ sentiment-analyzer/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/sentimeter.git
+git clone https://github.com/Butkii025/sentimeter.git
 cd sentimeter
 ```
 
@@ -91,7 +86,6 @@ cd sentimeter
 python -m venv venv
 
 # activate it:
-source venv/bin/activate        # macOS / Linux
 venv\Scripts\activate           # Windows (PowerShell or cmd)
 ```
 
@@ -130,13 +124,7 @@ python app/app.py
 
 Open the local URL Gradio prints (typically `http://127.0.0.1:7860`). By default it uses the classic model. To use a fine-tuned transformer instead:
 
-```bash
-
-# Windows (PowerShell)
-$env:SENTIMENT_BACKEND="transformer"
-$env:HF_REPO="your-username/distilbert-sentiment-imdb"
-python app/app.py
-```
+---
 
 ## Results
 
@@ -144,8 +132,14 @@ python app/app.py
 |---|---|---|---|
 | TF-IDF + Logistic Regression | 91.0% | 0.911 | Baseline, trains in minutes on CPU |
 | TF-IDF + LinearSVC | 90.8% | 0.909 | Comparable to LogReg |
-| RNN (TF-IDF input) | — | — | Learning exercise — see the notebook for why this architecture choice limits what the RNN can actually learn from bag-of-words input |
+| RNN (TF-IDF input) | - | - | Learning exercise - see the notebook for why this architecture choice limits what the RNN can actually learn from bag-of-words input |
 | Fine-tuned DistilBERT | *pending* | *pending* | Update after running the fine-tuning notebook |
+
+## App Visual
+<img width="500" height="350" alt="Screenshot 2026-08-15 232554" src="https://github.com/user-attachments/assets/dab04277-5152-40cb-acc5-99bb19c1a5b6" />
+<img width="500" height="350" alt="Screenshot 2026-08-15 231747" src="https://github.com/user-attachments/assets/6d7d7ad2-c737-4e8e-b93e-827520ffc440" />
+
+
 ---
 
 ## License
@@ -156,8 +150,8 @@ MIT - see [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICE
 
 [![Live Demo](https://img.shields.io/badge/demo-Hugging%20Face%20Spaces-yellow)](https://huggingface.co/spaces/PRIYANSHU2025/sentimeter)
 
-- Dataset: [IMDB Movie Reviews](https://ai.stanford.edu/~amaas/data/sentiment/) (Maas et al., 2011)
-- Model: [DistilBERT](https://huggingface.co/distilbert-base-uncased) (Sanh et al., 2019)
+- Dataset: [IMDB Movie Reviews](https://ai.stanford.edu/~amaas/data/sentiment/) 
+- Model: [DistilBERT](https://huggingface.co/distilbert-base-uncased)
 - Built with [Gradio](https://www.gradio.app/) and deployed on [Hugging Face Spaces](https://huggingface.co/spaces)
 
 ---
