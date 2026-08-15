@@ -6,7 +6,7 @@
 
 An end-to-end sentiment analysis project on the IMDB movie reviews dataset - from raw CSV to a deployed demo - built as a learning resource as much as a working app
 
-**[Try the live demo →](https://huggingface.co/spaces/PRIYANSHU2025/sentimeter)**
+**[Try the live demo](https://huggingface.co/spaces/PRIYANSHU2025/sentimeter)**
 
 ---
 
