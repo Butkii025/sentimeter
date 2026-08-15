@@ -19,7 +19,7 @@ This project classifies text as **positive** or **negative** sentiment, built as
 3. **Fine-tuned transformer** - DistilBERT, fine-tuned on the same data for a meaningful accuracy jump over the baselin
 4. **Deployment** - the best model served behind a Gradio UI on Hugging Face Spaces
 
-## Architecture
+## [Architecture](Architecture.md)
 
 ```mermaid
 flowchart TD
